@@ -13,7 +13,7 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Repos',
+      header: 'Github',
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
@@ -29,24 +29,32 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Whisperwoods',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Game project developed over the course of six weeks with a group of fellow students. I helped with various systems programming with focus on asset processing, animations and cinematics as well as shaders and graphics. I also created many of the assets including the main character model and animations, while overseeing the asset creation pipeline.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            '/public/ww.png',
           link: 'https://example.com',
         },
         {
-          title: 'Project Name',
+          title: 'Captain Catnip',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Gamejam project developed with another student over the course of three days. I was initally responsible for the asset creatio using blender and substance painter, followed by integrating these assets into the game and creating a custom water shader.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            '/public/Banner1.png',
+          link: 'https://kongstronk.itch.io/captain-catnip',
+        },
+        {
+          title: 'Push Hour',
+          description:
+            'A small game developed over a weekend for a gamejam event. The goal is to push people onto a subway train as fast as possible. I was mainly responsible for asset creation and integration, using blender and substance painter for models, textues and animations. Furthermore I helped with programming a system for crowd appearance variation and group sound ambiance',
+          imageUrl:
+            '/public/PushHourBanner.png',
+          link: 'https://kongstronk.itch.io/push-hour',
         },
       ],
     },

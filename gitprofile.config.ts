@@ -13,8 +13,8 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Portfolio',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      header: 'Repos',
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['sixtensch/Whisperwoods', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['sixtensch/Whisperwoods'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -52,7 +52,7 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Christoffer Eriksson',
     description: '',
     imageURL: '',
   },
@@ -94,18 +94,11 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Norwegian',
+      position: 'First Officer - Boeing 737NG',
+      from: 'March 2017',
+      to: 'April 2020',
+      companyLink: 'https://www.norwegian.com/',
     },
   ],
   certifications: [
@@ -113,7 +106,7 @@ const CONFIG = {
       name: 'International Baccalaureate',
       body: 'Diploma',
       year: 'Jan 2013',
-      //link: 'https://example.com',
+      link: 'https://www.ibo.org/',
     },
   ],
   educations: [

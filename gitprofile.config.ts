@@ -35,7 +35,7 @@ const CONFIG = {
         {
           title: 'Whisperwoods',
           description:
-            'Game project developed over the course of six weeks with a group of fellow students. I helped with various systems programming with focus on asset processing, animations and cinematics as well as shaders and graphics. I also created many of the assets including the main character model and animations, while overseeing the asset creation pipeline.',
+            'Game project developed from scratch over the course of six weeks as a university group project. I helped with various systems development with focus on asset processing, animation and cinematics as well as shaders and graphics. I also created many of the assets including the main character model and animations.',
           imageUrl:
             '/public/ww.png',
           link: 'https://example.com',
@@ -43,7 +43,7 @@ const CONFIG = {
         {
           title: 'Captain Catnip',
           description:
-            'Gamejam project developed with another student over the course of three days. I was initally responsible for the asset creatio using blender and substance painter, followed by integrating these assets into the game and creating a custom water shader.',
+            'Gamejam project developed with a close friend and fellow student over the course of three days. I was initally responsible for the asset creatio using blender and substance painter, followed by integrating these assets into the game and creating a custom water shader.',
           imageUrl:
             '/public/Banner1.png',
           link: 'https://kongstronk.itch.io/captain-catnip',
@@ -51,7 +51,7 @@ const CONFIG = {
         {
           title: 'Push Hour',
           description:
-            'A small game developed over a weekend for a gamejam event. The goal is to push people onto a subway train as fast as possible. I was mainly responsible for asset creation and integration, using blender and substance painter for models, textues and animations. Furthermore I helped with programming a system for crowd appearance variation and group sound ambiance',
+            'A small game developed over a weekend for a gamejam event with a friend. The goal is to push people onto a subway train as fast as possible. I was mainly responsible for asset creation and integration, using blender and substance painter for models, textues and animations. Furthermore I helped with programming a system for crowd appearance variation and group sound ambiance',
           imageUrl:
             '/public/PushHourBanner.png',
           link: 'https://kongstronk.itch.io/push-hour',
@@ -86,7 +86,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'C++',
@@ -97,7 +97,6 @@ const CONFIG = {
     'MySQL',
     'Git',
     'Docker',
-    'PHPUnit',
     'CSS',
   ],
   experiences: [
@@ -152,19 +151,19 @@ const CONFIG = {
   //   },
   // ],
   // Display articles from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
-  },
-  googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-  },
+  // blog: {
+  //   source: 'dev', // medium | dev
+  //   username: 'arifszn', // to hide blog section, keep it empty
+  //   limit: 2, // How many articles to display. Max is 10.
+  // },
+  // googleAnalytics: {
+  //   id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+  // },
   // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
-  },
+  // hotjar: {
+  //   id: '',
+  //   snippetVersion: 6,
+  // },
   themeConfig: {
     defaultTheme: 'lofi',
 

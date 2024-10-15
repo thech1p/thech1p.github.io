@@ -12,25 +12,34 @@ import { useState, Fragment, useEffect } from 'react';
  */
 const LazyImage: React.FC<{
   placeholder: React.ReactElement;
-  src: string;
+  src: string | any;  // Allow `string` for URLs or `any` for local `require()`
   alt: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
-}> = ({ placeholder, src, alt, ...rest }): React.ReactElement => {
+}> = ({ placeholder, src, alt, ...rest }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const imageToLoad = new Image();
-    imageToLoad.src = src;
+    let imageToLoad: HTMLImageElement | undefined;
+    if (typeof src === 'string') {
+      imageToLoad = new Image();
+      imageToLoad.src = src;
+    } else if (typeof src === 'object') {
+      // Handle the case where `src` is a local `require` object
+      imageToLoad = new Image();
+      imageToLoad.src = src.default || src; // React/webpack often bundles the path as `default`
+    }
 
-    imageToLoad.onload = () => {
-      setLoading(false);
-    };
+    if (imageToLoad) {
+      imageToLoad.onload = () => {
+        setLoading(false);
+      };
+    }
   }, [src]);
 
   return (
     <Fragment>
-      {loading ? placeholder : <img src={src} alt={alt} {...rest} />}
+      {loading ? placeholder : <img src={typeof src === 'string' ? src : src.default || src} alt={alt} {...rest} />}
     </Fragment>
   );
 };

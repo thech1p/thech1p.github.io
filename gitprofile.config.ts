@@ -34,21 +34,21 @@ const CONFIG = {
         {
           title: 'Whisperwoods',
           description:
-            'Game project developed from scratch over the course of six weeks as a university group project. I helped with various systems development with focus on asset processing, animation and cinematics as well as shaders and graphics. I also created many of the assets including the main character model and animations.',
+            'Game and engine developed from scratch over the course of six weeks as a university group project. I helped with the development of various systems including those for skeletal animation and cinematic cutscenes, asset processing, as well as shaders and graphics. I also helped creating many of the art assets including the main character model, textures, and animations.',
           imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/ww.png",
           link: 'https://github.com/sixtensch/Whisperwoods',
         },
         {
           title: 'Captain Catnip',
           description:
-            'Gamejam project developed with a close friend and fellow student over the course of three days. I was initally responsible for the asset creatio using blender and substance painter, followed by integrating these assets into the game and creating a custom water shader.',
+            'Another game jam game developed with over the course of a weekend as part of the same duo as Push Hour. I was similarely responsible for asset creation using blender and substance painter, followed by integrating the assets into the game and helping with various code, as well as creating a custom water shader.',
           imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/Banner1.png",
           link: 'https://kongstronk.itch.io/captain-catnip',
         },
         {
           title: 'Push Hour',
           description:
-            'A small game developed over a weekend for a gamejam event with a friend. The goal is to push people onto a subway train as fast as possible. I was mainly responsible for asset creation and integration, using blender and substance painter for models, textues and animations. Furthermore I helped with programming a system for crowd appearance variation and group sound ambiance',
+            'A game developed with a friend and fellow student over the course of a weekend for a game jam event. The goal is to push people onto a subway train as fast as possible. I was mainly responsible for asset creation and integration, using blender and substance painter for models, textues and animations. Furthermore I helped with programming a system for crowd appearance variation and group sound ambiance',
           imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PushHourBanner.png",
           link: 'https://kongstronk.itch.io/push-hour',
         },
@@ -89,11 +89,11 @@ const CONFIG = {
     'C#',
     'Unity',
     'Blender',
+    'Substance Painter',
     'JavaScript',
     'MySQL',
     'Git',
     'Docker',
-    'CSS',
   ],
   experiences: [
     {
@@ -224,11 +224,11 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  // footer: `Made with <a 
+  //     class="text-primary" href="https://github.com/arifszn/gitprofile"
+  //     target="_blank"
+  //     rel="noreferrer"
+  //   >GitProfile</a> and ❤️`,
 
   enablePWA: true,
 };

@@ -36,21 +36,21 @@ const CONFIG = {
           title: 'Whisperwoods',
           description:
             'Game project developed from scratch over the course of six weeks as a university group project. I helped with various systems development with focus on asset processing, animation and cinematics as well as shaders and graphics. I also created many of the assets including the main character model and animations.',
-          imageUrl: process.env.PUBLIC_URL + '/ww.png',
+          imageUrl: '/assets/ww.png',
           link: 'https://example.com',
         },
         {
           title: 'Captain Catnip',
           description:
             'Gamejam project developed with a close friend and fellow student over the course of three days. I was initally responsible for the asset creatio using blender and substance painter, followed by integrating these assets into the game and creating a custom water shader.',
-          imageUrl: process.env.PUBLIC_URL + '/Banner1.png',
+          imageUrl: '/assets/Banner1.png',
           link: 'https://kongstronk.itch.io/captain-catnip',
         },
         {
           title: 'Push Hour',
           description:
             'A small game developed over a weekend for a gamejam event with a friend. The goal is to push people onto a subway train as fast as possible. I was mainly responsible for asset creation and integration, using blender and substance painter for models, textues and animations. Furthermore I helped with programming a system for crowd appearance variation and group sound ambiance',
-          imageUrl: process.env.PUBLIC_URL + '/PushHourBanner.png',
+          imageUrl: '/assets/PushHourBanner.png',
           link: 'https://kongstronk.itch.io/push-hour',
         },
       ],

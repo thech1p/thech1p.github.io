@@ -35,13 +35,11 @@ const CONFIG = {
 			title: 'Tinkertails',
 			description:
 			  'Larger game project developed from scratch over the course of 14 weeks as a university group project. I implemented many of the systems including those for animations, transforms, model importing, PBR image based lighting and cubemap filtering, and was overall responsible for the asset pipeline along with creating a majority of the 3d assets.',
-			imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/ww.png",
+			imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png",
 			link: '',
 			images: [
-				{ link: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/ww.png" },
-				{ link: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/ww.png" },
-				{ link: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/ww.png" },
-				{ link: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/ww.png" },
+				{ link: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png" },
+				{ link: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png" },
 			]
 		  },
         {

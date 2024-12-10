@@ -96,37 +96,37 @@ const CONFIG = {
     'Git',
     'Docker',
   ],
-  experiences: [
-    {
-      company: 'Norwegian',
-      position: 'First Officer - Boeing 737NG',
-      from: 'March 2017',
-      to: 'April 2020',
-      companyLink: 'https://www.norwegian.com/',
-    },
-  ],
-  certifications: [
-    {
-      name: 'International Baccalaureate',
-      body: 'Diploma',
-      year: 'Jan 2013',
-      link: 'https://www.ibo.org/',
-    },
-  ],
-  educations: [
-    {
-      institution: 'Blekinge Institute of Technology',
-      degree: 'Master of Science in Engineering (MSE), Game and Software Engineering',
-      from: '2020',
-      to: '2025',
-    },
-    {
-      institution: 'Lund University School of Aviation',
-      degree: 'Commercial Pilot with MPL Certificate',
-      from: '2015',
-      to: '2017',
-    },
-  ],
+//   experiences: [
+//     {
+//       company: 'Norwegian',
+//       position: 'First Officer - Boeing 737NG',
+//       from: 'March 2017',
+//       to: 'April 2020',
+//       companyLink: 'https://www.norwegian.com/',
+//     },
+//   ],
+//   certifications: [
+//     {
+//       name: 'International Baccalaureate',
+//       body: 'Diploma',
+//       year: 'Jan 2013',
+//       link: 'https://www.ibo.org/',
+//     },
+//   ],
+//   educations: [
+//     {
+//       institution: 'Blekinge Institute of Technology',
+//       degree: 'Master of Science in Engineering (MSE), Game and Software Engineering',
+//       from: '2020',
+//       to: '2025',
+//     },
+//     {
+//       institution: 'Lund University School of Aviation',
+//       degree: 'Commercial Pilot with MPL Certificate',
+//       from: '2015',
+//       to: '2017',
+//     },
+//   ],
   // publications: [
   //   {
   //     title: 'Publication Title',

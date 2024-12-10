@@ -71,7 +71,7 @@ const CONFIG = {
         {
           title: 'Push Hour',
           description:
-            'A game developed with a friend and fellow student over the course of a weekend for a game jam event. I was mainly responsible for asset creation and integration, using blender and substance painter. Furthermore I helped with various programming tasks including a system for crowd appearance variation, and crowd sound ambiance',
+            'A game developed with a friend and fellow student over the course of a weekend for a game jam event. I was mainly responsible for asset creation and integration, using blender and substance painter. Furthermore I helped with various programming tasks including a system for crowd appearance variation, and crowd sound ambiance.',
           imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PushHourBanner.png",
           link: 'https://kongstronk.itch.io/push-hour',
 		  images: [

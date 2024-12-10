@@ -114,7 +114,7 @@ const renderExternalProjects = () => {
 				{item.description}
 				</p>
 				{/* Render additional images if available */}
-				{item.images?.length > 0 && (
+				{item.images && (
 					<div className="mt-2">
 					<h3 className="font-medium text-center opacity-80 mb-2">
 						Images
@@ -142,7 +142,7 @@ const renderExternalProjects = () => {
 				)}
 
 				{/* Render additional images if available */}
-				{item.videos?.length > 0 && (
+				{item.videos && (
 					<div className="mt-2">
 					<h3 className="font-medium text-center opacity-80 mb-2">
 						Videos

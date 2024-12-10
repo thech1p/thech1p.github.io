@@ -72,20 +72,20 @@ const renderExternalProjects = () => {
 		className="card shadow-lg compact bg-base-100 cursor-pointer"
 		key={index}
 		href={item.link}
-		onClick={(e) => {
-			e.preventDefault();
-			try {
-				if (googleAnalyticId) {
-					ga.event('Click External Project', {
-					post: item.title,
-					});
-				}
-			} catch (error) {
-			console.error(error);
-			}
-			if (item.link)
-				window?.open(item.link, '_blank');
-		}}
+		// onClick={(e) => {
+		// 	e.preventDefault();
+		// 	try {
+		// 		if (googleAnalyticId) {
+		// 			ga.event('Click External Project', {
+		// 			post: item.title,
+		// 			});
+		// 		}
+		// 	} catch (error) {
+		// 	console.error(error);
+		// 	}
+		// 	if (item.link)
+		// 		window?.open(item.link, '_blank');
+		// }}
 		>
 		<div className="p-8 h-full w-full">
 			<div className="flex items-center flex-col">
@@ -106,6 +106,12 @@ const renderExternalProjects = () => {
 						heightCls: 'h-full',
 						shape: '',
 						})}
+						onClick={(e: React.MouseEvent<HTMLDivElement>) => {
+							e.preventDefault();
+							e.stopPropagation();
+							if (item.link)
+								window?.open(item.link, '_blank');
+						}}
 					/>
 					</div>
 				</div>
@@ -113,62 +119,63 @@ const renderExternalProjects = () => {
 				<p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
 				{item.description}
 				</p>
-				{/* Render additional images if available */}
-				{item.images && (
-					<div className="mt-2">
-					<h3 className="font-medium text-center opacity-80 mb-2">
-						Images
-					</h3>
-						<div className="grid grid-cols-3 gap-4">
-							{item.images?.map((imageItem, imageIndex) => (imageItem.imageUrl && (
-								<div
-								key={imageIndex}
-								className="w-full cursor-pointer overflow-hidden rounded-lg w-40 h-32"
-								onClick={() => window?.open(imageItem.imageUrl, '_blank')}>
-								<LazyImage
-									src={imageItem.imageUrl}
-									alt={`Image ${imageIndex + 1}`}
-									placeholder={skeleton({
-									widthCls: 'w-full',
-									heightCls: 'h-full',
-									shape: '',
-									})}
-								/>
-								</div>
-							)
-							))}
-						</div>
-					</div>
-				)}
+				
 
-				{/* Render additional images if available */}
-				{item.videos && (
-					<div className="mt-2">
-					<h3 className="font-medium text-center opacity-80 mb-2">
-						Videos
-					</h3>
-						<div className="grid grid-cols-3 gap-4">
-							{item.videos?.map((videoItem, videoIndex) => (videoItem.imageUrl && (
-								<div
-								key={videoIndex}
-								className="w-full cursor-pointer mask mask-squircle w-24 h-24"
-								onClick={() => window?.open(videoItem.videoUrl, '_blank')}>
-								<LazyImage
-									src={videoItem.imageUrl}
-									alt={`Image ${videoIndex + 1}`}
-									placeholder={skeleton({
-									widthCls: 'w-full',
-									heightCls: 'h-full',
-									shape: '',
-									})}
-								/>
-								</div>
-							)
-							))}
+						{/* Render additional images if available */}
+						{(item.images || item.videos) && (
+						<div className="mt-2">
+							{/* <h3 className="font-medium text-center opacity-80 mb-2">Media</h3> */}
+							<div className="flex flex-wrap gap-4 justify-center">
+							{item.images?.map(
+								(imageItem, imageIndex) =>
+								imageItem.imageUrl && (
+									<div
+									key={imageIndex}
+									className="cursor-pointer overflow-hidden rounded-lg h-24"
+									onClick={(e: React.MouseEvent<HTMLDivElement>) => {
+										e.stopPropagation(); // Prevent parent <a> from handling this click
+										window?.open(imageItem.imageUrl, '_blank'); // Open the image
+									}}
+									>
+									<LazyImage
+										src={imageItem.imageUrl}
+										alt={`Image ${imageIndex + 1}`}
+										placeholder={skeleton({
+										widthCls: 'w-full',
+										heightCls: 'h-full',
+										})}
+										className="w-full h-full object-cover"
+									/>
+									</div>
+								)
+							)}
+							{item.videos?.map(
+									(videoItem, videoIndex) =>
+									videoItem.imageUrl && (
+										<div
+										key={videoIndex}
+										className="cursor-pointer overflow-hidden rounded-lg h-24"
+										>
+										<LazyImage
+											src={videoItem.imageUrl}
+											alt={`Video Thumbnail ${videoIndex + 1}`}
+											placeholder={skeleton({
+											widthCls: 'w-full',
+											heightCls: 'h-full',
+											})}
+											className="w-full h-full object-cover"
+											onClick={(e: React.MouseEvent<HTMLImageElement>) => {
+												e.stopPropagation(); // Prevent parent handler from firing
+												window?.open(videoItem.videoUrl, '_blank'); // Open image link
+											}}
+										/>
+										</div>
+									)
+								)}
+							</div>
 						</div>
-					</div>
-				)}
-
+						)}
+						
 				</div>
 				</div>
 			</div>

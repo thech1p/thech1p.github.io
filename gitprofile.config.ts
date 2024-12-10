@@ -34,24 +34,27 @@ const CONFIG = {
 		{
 			title: 'Tinkertails',
 			description:
-			  'Larger game project developed from scratch over the course of 14 weeks as a university group project. I implemented many of the systems including those for animations, transforms, model importing, PBR image based lighting and cubemap filtering, and was overall responsible for the asset pipeline along with creating a majority of the 3d assets.',
+			  'A multiplayer co-op game and custom game engine developed from scratch over 14 weeks as part of a university group project. Contributed to core systems, including animation, transform handling, model importing, physically based rendering (PBR) with image-based lighting, and cubemap filtering. Played a key role in organizing the asset pipeline and created the majority of the 3D assets.',
 			imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png",
 			link: '',
-			// images: [
-			// 	{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png" },
-			// 	{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png" },
-			// 	{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png" },
-			// ]
+			images: [
+				{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PortfolioImages/TTPoster.jpg" },
+				{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PortfolioImages/TTBuildmode.jpg" },
+				{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PortfolioImages/TTDevmode.png" },
+			]
 		  },
         {
           title: 'Whisperwoods',
           description:
-            'Game and engine developed from scratch over the course of six weeks as a university group project. I helped with the development of various systems including those for skeletal animation and cinematic cutscenes, asset processing, as well as some shaders and graphics. I also helped creating many of the art assets including the main character model, textures, and animations.',
+            'Game and custom engine built over the course of six weeks as part of a university group project. Contributed to essential systems such as skeletal animation, cinematic cutscenes, asset processing, and various shaders and graphics. Additionally, created many of the art assets, including the main character model, textures, and animations.',
           imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/ww.png",
-          link: 'https://github.com/sixtensch/Whisperwoods',
-		//   videos: [
-		// 	{ imageUrl: "" , videoUrl: "https://youtu.be/jSfU6uw6qy8" }
-		//   ]
+          
+		  images: [
+			{ imageUrl: "https://github.com/thech1p/thech1p.github.io/blob/main/PortfolioImages/whisperwoods-poster.png?raw=true" }
+		  ],
+		  videos: [
+			{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PortfolioImages/WWVideoThumbnail.jpg" , videoUrl: "https://youtu.be/jSfU6uw6qy8" }
+		  ]
 			
         },
         {
@@ -60,6 +63,10 @@ const CONFIG = {
             'Another game jam game developed with over the course of a weekend as part of the same duo as Push Hour. I was similarely mainly responsible for creating and integrating assets using blender and substance painter. This was followed by helping out with various code and creating a water shader using the unity shader nodes.',
           imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/Banner1.png",
           link: 'https://kongstronk.itch.io/captain-catnip',
+		  images: [
+			{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PortfolioImages/CCCaptain.jpg" },
+			{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PortfolioImages/CCGameplay1.png" },
+			]
         },
         {
           title: 'Push Hour',
@@ -67,6 +74,10 @@ const CONFIG = {
             'A game developed with a friend and fellow student over the course of a weekend for a game jam event. I was mainly responsible for asset creation and integration, using blender and substance painter. Furthermore I helped with various programming tasks including a system for crowd appearance variation, and crowd sound ambiance',
           imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PushHourBanner.png",
           link: 'https://kongstronk.itch.io/push-hour',
+		  images: [
+			{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PortfolioImages/PHMenu.png" },
+			{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/PortfolioImages/PHGameplay1.png" },
+			]
         },
       ],
     },

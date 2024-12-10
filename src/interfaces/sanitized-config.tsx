@@ -19,11 +19,16 @@ export interface SanitizedGitHubProjects {
   };
 }
 
+export interface SanitizedScreenShot{
+	imageUrl?:string;
+}
+
 export interface SanitizedExternalProject {
   title: string;
   description?: string;
   imageUrl?: string;
   link: string;
+  images?: SanitizedScreenShot[]; 
 }
 
 export interface SanitizedExternalProjects {

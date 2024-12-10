@@ -23,12 +23,18 @@ export interface SanitizedScreenShot{
 	imageUrl?:string;
 }
 
+export interface SanitizedVideoLink{
+	imageUrl?:string;
+	videoUrl?:string;
+}
+
 export interface SanitizedExternalProject {
   title: string;
   description?: string;
   imageUrl?: string;
   link: string;
-  images?: SanitizedScreenShot[]; 
+  images?: Array<SanitizedScreenShot>;
+  videos?: Array<SanitizedVideoLink>;
 }
 
 export interface SanitizedExternalProjects {

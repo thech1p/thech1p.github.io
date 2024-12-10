@@ -37,10 +37,11 @@ const CONFIG = {
 			  'Larger game project developed from scratch over the course of 14 weeks as a university group project. I implemented many of the systems including those for animations, transforms, model importing, PBR image based lighting and cubemap filtering, and was overall responsible for the asset pipeline along with creating a majority of the 3d assets.',
 			imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png",
 			link: '',
-			images: [
-				{ link: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png" },
-				{ link: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png" },
-			]
+			// images: [
+			// 	{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png" },
+			// 	{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png" },
+			// 	{ imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/TTIcon.png" },
+			// ]
 		  },
         {
           title: 'Whisperwoods',
@@ -48,6 +49,10 @@ const CONFIG = {
             'Game and engine developed from scratch over the course of six weeks as a university group project. I helped with the development of various systems including those for skeletal animation and cinematic cutscenes, asset processing, as well as some shaders and graphics. I also helped creating many of the art assets including the main character model, textures, and animations.',
           imageUrl: "https://raw.githubusercontent.com/thech1p/thech1p.github.io/refs/heads/main/ww.png",
           link: 'https://github.com/sixtensch/Whisperwoods',
+		//   videos: [
+		// 	{ imageUrl: "" , videoUrl: "https://youtu.be/jSfU6uw6qy8" }
+		//   ]
+			
         },
         {
           title: 'Captain Catnip',
